@@ -6,17 +6,15 @@ function ContainerMainComponent(props) {
     <Container {...props}>
       <ContainerComponentStack>
         <Group>
-            <SubtitleContent>Bem Vindo</SubtitleContent>
-            <TitleContent>Acesse ao portal da Mentoria 2020</TitleContent>
-            <ButtonPortal>
-              <ButtonOverlay href="https://portal-mentoria2020.netlify.com/">
-                <TitleButton>Mentoria 2020</TitleButton>
-              </ButtonOverlay>
-            </ButtonPortal>
+          <SubtitleContent>Bem Vindo</SubtitleContent>
+          <TitleContent>Acesse ao portal da Mentoria 2020</TitleContent>
+          <ButtonPortal>
+            <ButtonOverlay href="https://portal-mentoria2020.netlify.com/">
+              <TitleButton>Mentoria 2020</TitleButton>
+            </ButtonOverlay>
+          </ButtonPortal>
         </Group>
-        <Image
-          src={require("../assets/images/image_bg.jpg")}
-        />
+        <Image src={require("../assets/images/image_bg.jpg")} />
       </ContainerComponentStack>
     </Container>
   );
@@ -31,7 +29,7 @@ const Image = styled.img`
   width: 500px;
   height: 500px;
   object-fit: contain;
-  margin-top:5%;
+  margin-top: 5%;
 `;
 
 const ButtonOverlay = styled.a`
@@ -97,7 +95,8 @@ const TitleButton = styled.span`
 `;
 
 const ContainerComponentStack = styled.div`
-  background-color: rgba(60, 62, 85, 1);
+  /* background-color: rgba(60, 62, 85, 1); */
+  background-color: #3c3e55
   width: 100%;
   height: 100%;
   display: flex;
