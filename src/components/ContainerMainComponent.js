@@ -1,30 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import ContainerComponent from "./ContainerComponent";
 
 function ContainerMainComponent(props) {
   return (
     <Container {...props}>
       <ContainerComponentStack>
-        <ContainerComponent
-          style={{
-            top: 0,
-            left: 0,
-            width: 1280,
-            height: 736,
-            position: "absolute"
-          }}
-        ></ContainerComponent>
         <Group>
           <PathStack>
-            <svg
+            {/* <svg
               viewBox="0 0 641 366.0020454541225"
               style={{
-                top: 0,
-                left: 0,
-                width: 1280,
-                height: 733,
-                position: "absolute"
+                //top: 0,
+                //left: 0,
+                //position: "absolute",
+                width: "100%",
+                height: "100%",
+                zIndex: 0
               }}
             >
               <path
@@ -41,6 +32,7 @@ function ContainerMainComponent(props) {
                 left: 438,
                 width: 400,
                 height: 400,
+                zIndex: 0,
                 position: "absolute"
               }}
             >
@@ -61,7 +53,8 @@ function ContainerMainComponent(props) {
                 left: 716,
                 width: 400,
                 height: 400,
-                position: "absolute"
+                position: "absolute",
+                zIndex: 0
               }}
             >
               <ellipse
@@ -73,7 +66,7 @@ function ContainerMainComponent(props) {
                 rx={200}
                 ry={200}
               ></ellipse>
-            </svg>
+            </svg> */}
             <SubtitleContent>Bem Vindo</SubtitleContent>
             <TitleContent>Acesse ao portal da Mentoria 2020</TitleContent>
             <ButtonPortal>
@@ -105,11 +98,14 @@ const ButtonOverlay = styled.a`
   cursor: pointer;
 `;
 const Group = styled.div`
-  top: 0px;
+  /* top: 0px;
   left: 0px;
   width: 1280px;
   height: 736px;
-  position: absolute;
+  position: absolute; */
+  background-color: rgba(60, 62, 85, 1);
+  width: 100%;
+  height: 100%;
   flex-direction: column;
   display: flex;
 `;
@@ -165,15 +161,22 @@ const TitleButton = styled.span`
 `;
 
 const PathStack = styled.div`
-  width: 1280px;
+  /* width: 1280px;
   height: 733px;
-  position: relative;
+  position: relative; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 `;
 
 const ContainerComponentStack = styled.div`
-  width: 1280px;
+  /* width: 1280px;
   height: 736px;
-  position: relative;
+  position: relative; */
+  background-color: rgba(60, 62, 85, 1);
+  width: 100%;
+  height: 100%;
 `;
 
 export default ContainerMainComponent;
